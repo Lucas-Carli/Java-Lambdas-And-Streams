@@ -57,8 +57,7 @@ public class ExerciseLambdas {
      *Regresar un stream con todos los comentarios del cada review de todos los videojuegos del stream.
      */
     static Stream<String> exercise4(Stream<Videogame> stream) {
-        return stream.
-                flatMap(v -> v.getReviews().stream()).map(Review::getComment);
+        return stream.flatMap(v -> v.getReviews().stream()).map(Review::getComment);
     }
 
     /*
